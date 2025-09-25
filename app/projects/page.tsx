@@ -128,6 +128,51 @@ const mobileAppsProjects = [
   },
 ];
 
+const wordpressProjects = [
+  {
+    title:
+      "Peternakan ULM Website Profile: A WordPress-based website for the Faculty of Agriculture at Lambung Mangkurat University",
+    description:
+      "The Peternakan ULM Website is a WordPress-based website developed for the Faculty of Agriculture at Lambung Mangkurat University. It serves as an online platform to provide information about the faculty, its programs, and research activities.",
+    image: "images/peternakan.png",
+    tech: ["WordPress"],
+    liveUrl: "https://peternakan.ulm.ac.id",
+    githubUrl: "#",
+    featured: false,
+  },
+  {
+    title:
+      "PPKN ULM Website Profile: A WordPress-based website for the Faculty of Teacher Training and Education at Lambung Mangkurat University",
+    description:
+      "The PPKN ULM Website is a WordPress-based website developed for the Faculty of Teacher Training and Education at Lambung Mangkurat University. It serves as an online platform to provide information about the faculty, its programs, and research activities.",
+    image: "images/ppknulm.png",
+    tech: ["WordPress"],
+    liveUrl: "https://ppkn.fkip.ulm.ac.id",
+    githubUrl: "#",
+    featured: false,
+  },
+  {
+    title: "Sustainesia Website Profile: A WordPress-based website for a sustainability-focused organization",
+    description:
+      "Sustainesia is a WordPress-based website developed for a sustainability-focused organization. It serves as an online platform to promote sustainable practices, share resources, and engage with the community.",
+    image: "images/sustainesia.png",
+    tech: ["WordPress"],
+    liveUrl: "https://sustainesia.com",
+    githubUrl: "#",
+    featured: false,
+  },
+  {
+    title: "Go Ahead Indonesia Website Profile: A WordPress-based website for sustainability and green innovation with a focus on empowering youth and women",
+    description:
+      "Go Ahead Indonesia is an institution engaged in the field of sustainability and green innovation with a focus on empowering youth and women. The website serves as a platform to showcase their initiatives, programs, and impact in the community.",
+    image: "images/goahead.png",
+    tech: ["WordPress"],
+    liveUrl: "https://goaheadindonesia.com",
+    githubUrl: "#",
+    featured: false,
+  },
+];
+
 export default function ProjectsPage() {
   const featuredProjects = projects.filter((p) => p.featured);
   const otherProjects = projects.filter((p) => !p.featured);
@@ -160,13 +205,16 @@ export default function ProjectsPage() {
               key={index}
               className="group bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 padding-5"
             >
-              <div className=" from-neutral-100 to-neutral-200 dark:from-neutral-800 dark:to-neutral-700 flex items-center justify-center">
+                <div className="from-neutral-100 to-neutral-200 dark:from-neutral-800 dark:to-neutral-700 flex flex-col items-center justify-center">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="object-contain h-full w-full border-radius-lg mb-4"
                 />
-              </div>
+                <span className="mt-2 px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded text-xs font-medium">
+                  Note: Detailed feature screenshots are not displayed due to confidentiality and sensitive information.
+                </span>
+                </div>
 
               <div className="p-6">
                 <div className="flex items-start justify-between mb-3">
@@ -223,12 +271,15 @@ export default function ProjectsPage() {
               key={index}
               className="group bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300"
             >
-              <div className=" from-neutral-100 to-neutral-200 dark:from-neutral-800 dark:to-neutral-700 flex items-center justify-center">
+              <div className=" from-neutral-100 to-neutral-200 dark:from-neutral-800 dark:to-neutral-700 flex flex-col items-center justify-center">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="object-contain h-full w-full border-radius-lg mb-4"
                 />
+                <span className="mt-2 px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded text-xs font-medium">
+                  Note: Detailed feature screenshots are not displayed due to confidentiality and sensitive information.
+                </span>
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-bold tracking-tight mb-2 group-hover:text-purple-600 transition-colors">
@@ -285,11 +336,14 @@ export default function ProjectsPage() {
               key={index}
               className="group bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col items-center"
             >
-              <div className="flex items-center justify-center w-full py-6 bg-neutral-50 dark:bg-neutral-800">
+              <div className="flex flex-col items-center justify-center w-full py-6 bg-neutral-50 dark:bg-neutral-800">
                 <ImageSlider images={project.image} />
               </div>
               <div className="p-6 w-full">
-                <h3 className="text-lg font-bold tracking-tight mb-2 group-hover:text-purple-600 transition-colors text-start">
+                <span className="mt-2 px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded text-[12px] font-normal">
+                  Note: Detailed feature screenshots are not displayed due to confidentiality and sensitive information.
+                </span>
+                <h3 className="text-lg font-bold tracking-tight mt-2 mb-2 group-hover:text-purple-600 transition-colors text-start">
                   {project.title}
                 </h3>
                 <p className="text-neutral-600 dark:text-neutral-400 mb-4 text-sm text-start">
@@ -306,6 +360,68 @@ export default function ProjectsPage() {
                   ))}
                 </div>
                 <div className="flex gap-3 justify-start">
+                  <a
+                    href={project.liveUrl}
+                    className="text-purple-600 dark:text-purple-400 hover:underline text-sm font-medium"
+                  >
+                    Live Demo ↗
+                  </a>
+                  <a
+                    href={project.githubUrl}
+                    className="text-neutral-600 dark:text-neutral-400 hover:underline text-sm font-medium"
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Wordpress Projects */}
+      <section className="mb-16">
+        <h2 className="text-2xl font-bold tracking-tight mb-8">
+          Wordpress Projects
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {wordpressProjects.map((project, index) => (
+            <div
+              key={index}
+              className="group bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300"
+            >
+              <div className=" from-neutral-100 to-neutral-200 dark:from-neutral-800 dark:to-neutral-700 flex items-center justify-center">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="object-contain h-full w-full border-radius-lg mb-4"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold tracking-tight mb-2 group-hover:text-purple-600 transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-neutral-600 dark:text-neutral-400 mb-4 text-sm">
+                  {project.description}
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tech.slice(0, 3).map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-2 py-1 bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 rounded text-xs font-medium"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                  {project.tech.length > 3 && (
+                    <span className="px-2 py-1 bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 rounded text-xs font-medium">
+                      +{project.tech.length - 3}
+                    </span>
+                  )}
+                </div>
+
+                <div className="flex gap-3">
                   <a
                     href={project.liveUrl}
                     className="text-purple-600 dark:text-purple-400 hover:underline text-sm font-medium"

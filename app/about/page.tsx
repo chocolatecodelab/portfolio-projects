@@ -1,3 +1,4 @@
+import CertificateSlider from "app/components/certificate";
 import { ProfilePhoto } from "app/components/profile-photo";
 
 export const metadata = {
@@ -120,6 +121,8 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
+      {/* Certificate Slider Section */}
+      <CertificateSlider />
     </div>
   );
 }

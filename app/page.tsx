@@ -1,5 +1,6 @@
 import { FeaturedProjects } from "app/components/featured-projects";
 import { ProfilePhoto } from "app/components/profile-photo";
+import { WorkExperiences } from "./components/work-experiences";
 
 export default function Page() {
   return (
@@ -58,6 +59,14 @@ export default function Page() {
         </h2>
         <FeaturedProjects />
       </section>
+
+    {/* Work Experiences Section */}
+      <section className="pb-20">
+        <h2 className="mb-12 text-3xl font-bold tracking-tight text-center">
+          👨‍💻 Work Experiences
+        </h2>
+        <WorkExperiences />
+      </section>  
     </div>
   );
 }
