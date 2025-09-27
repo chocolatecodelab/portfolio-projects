@@ -24,7 +24,7 @@ const certificates: Certificate[] = [
         id: 2,
         title: "Junior Web Developer Certification",
         issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
-        date: "Feb 2024",
+        date: "Agustus 2021",
         image: "images/junior_web_developer.jpg",
         description: "Certified as a Junior Web Developer by BNSP, demonstrating proficiency in web development using HTML, CSS, and JavaScript.",
     },
