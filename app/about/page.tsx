@@ -1,13 +1,11 @@
+'use client'
+
 import CertificateSlider from "app/components/certificate";
 import { ProfilePhoto } from "app/components/profile-photo";
-
-export const metadata = {
-  title: "About",
-  description:
-    "Learn more about my background, skills, and remote work experience.",
-};
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function AboutPage() {
+  const { t } = useLanguage()
   return (
     <div className="max-w-4xl mx-auto">
       {/* Hero Section */}
@@ -16,40 +14,29 @@ export default function AboutPage() {
           <ProfilePhoto size="lg" />
         </div>
         <h1 className="text-4xl font-bold tracking-tight mb-4">
-          About{" "}
+          {t('about.title')}{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">
-            Me
+            {t('about.titleHighlight')}
           </span>
         </h1>
         <p className="text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
-          Web and mobile developer dedicated to building seamless, engaging
-          experiences across platforms. I enjoy crafting intuitive interfaces
-          and performant applications for both web and mobile users.
+          {t('about.description')}
         </p>
       </section>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
         {/* My Story */}
         <div className="space-y-6">
-          <h2 className="text-2xl font-bold tracking-tight">My Story</h2>
+          <h2 className="text-2xl font-bold tracking-tight">{t('about.myStory')}</h2>
           <div className="prose prose-neutral dark:prose-invert max-w-none">
             <p>
-              I am a Computer Science graduate from Universitas Lambung
-              Mangkurat with a strong passion for web and mobile application
-              development. During my studies and real-world projects, I gained
-              hands-on experience in building applications using Flutter, React,
-              and Next.js, as well as backend development with PHP and
-              CodeIgniter.
+              {t('about.storyParagraph1')}
             </p>
             <p>
-              I enjoy solving problems through logical thinking, collaborating
-              in teams, and delivering reliable solutions. I have also
-              contributed to projects under PT. Netgen Inovasi Digital, focusing
-              on web and mobile app development for small-to-medium businesses.
+              {t('about.storyParagraph2')}
             </p>
             <p>
-              I am open to opportunities in software development and always
-              eager to learn, grow, and create impactful technology solutions.
+              {t('about.storyParagraph3')}
             </p>
           </div>
         </div>
@@ -57,11 +44,11 @@ export default function AboutPage() {
         {/* Technical Skills */}
         <div className="space-y-6">
           <h2 className="text-2xl font-bold tracking-tight">
-            Technical Skills
+            {t('about.technicalSkills')}
           </h2>
           <div className="space-y-4">
             <div>
-              <h3 className="font-medium text-lg mb-3">Frontend</h3>
+              <h3 className="font-medium text-lg mb-3">{t('about.frontend')}</h3>
               <div className="flex flex-wrap gap-2">
                 {[
                   "React.js",
@@ -85,7 +72,7 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <h3 className="font-medium text-lg mb-3">Backend</h3>
+              <h3 className="font-medium text-lg mb-3">{t('about.backend')}</h3>
               <div className="flex flex-wrap gap-2">
                 {[
                   "Next.js",
@@ -104,7 +91,7 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <h3 className="font-medium text-lg mb-3">Tools & Others</h3>
+              <h3 className="font-medium text-lg mb-3">{t('about.toolsOthers')}</h3>
               <div className="flex flex-wrap gap-2">
                 {["Git", "GitHub", "Figma", "VS Code", "Vercel"].map(
                   (tool) => (

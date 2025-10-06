@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 type Certificate = {
     id: number;
@@ -11,27 +12,28 @@ type Certificate = {
     description?: string;
 };
 
-const certificates: Certificate[] = [
+const certificates = [
     {
         id: 1,
-        title: "Junior  Mobile Developer Certification",
-        issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
-        date: "Agustus 2025",
+        titleKey: "certificates.juniorMobileDev",
+        issuerKey: "certificates.issuer",
+        date: "Aug 2025",
         image: "images/junior_mobile_developer.jpg",
-        description: "Certified as a Junior Mobile Developer by BNSP, demonstrating proficiency in mobile application development using React Native and Flutter.",
+        descriptionKey: "certificates.juniorMobileDevDesc",
     },
     {
         id: 2,
-        title: "Junior Web Developer Certification",
-        issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
-        date: "Agustus 2021",
+        titleKey: "certificates.juniorWebDev",
+        issuerKey: "certificates.issuer",
+        date: "Feb 2024",
         image: "images/junior_web_developer.jpg",
-        description: "Certified as a Junior Web Developer by BNSP, demonstrating proficiency in web development using HTML, CSS, and JavaScript.",
+        descriptionKey: "certificates.juniorWebDevDesc",
     },
     // Add more certificates as needed
 ];
 
 const CertificateSlider: React.FC = () => {
+    const { t } = useLanguage();
     const [current, setCurrent] = React.useState(0);
     const [showModal, setShowModal] = React.useState(false);
 
@@ -51,18 +53,18 @@ const CertificateSlider: React.FC = () => {
             aria-label="Certificates and Achievements"
             className="w-full max-w-xl mx-auto py-8"
         >
-            <h2 className="text-2xl font-bold mb-4 text-center">Certificates as a Developer</h2>
+            <h2 className="text-2xl font-bold mb-4 text-center">{t('certificates.title')}</h2>
             <div className="relative bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6 flex flex-col items-center">
                 <img
                     src={certificates[current].image}
-                    alt={certificates[current].title}
-                    className="w-32 h-32 object-cover rounded-md mb-4 border"
+                    alt={t(certificates[current].titleKey)}
+                    className="w-32 h-32 object-cover rounded-md mb-4 border cursor-pointer"
                     onClick={openModal}
                 />
-                <h3 className="text-lg font-semibold">{certificates[current].title}</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">{certificates[current].issuer} &middot; {certificates[current].date}</p>
-                {certificates[current].description && (
-                    <p className="mt-2 text-gray-700 dark:text-gray-300 text-center">{certificates[current].description}</p>
+                <h3 className="text-lg font-semibold">{t(certificates[current].titleKey)}</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">{t(certificates[current].issuerKey)} &middot; {certificates[current].date}</p>
+                {certificates[current].descriptionKey && (
+                    <p className="mt-2 text-gray-700 dark:text-gray-300 text-center">{t(certificates[current].descriptionKey)}</p>
                 )}
                 <div className="flex mt-6 space-x-4">
                     <button
@@ -115,13 +117,13 @@ const CertificateSlider: React.FC = () => {
                         </button>
                         <img
                             src={certificates[current].image}
-                            alt={certificates[current].title}
+                            alt={t(certificates[current].titleKey)}
                             className="w-64 h-64 object-cover rounded-md mb-4 border"
                         />
-                        <h3 className="text-lg font-semibold">{certificates[current].title}</h3>
-                        <p className="text-sm text-gray-500 dark:text-gray-400">{certificates[current].issuer} &middot; {certificates[current].date}</p>
-                        {certificates[current].description && (
-                            <p className="mt-2 text-gray-700 dark:text-gray-300 text-center">{certificates[current].description}</p>
+                        <h3 className="text-lg font-semibold">{t(certificates[current].titleKey)}</h3>
+                        <p className="text-sm text-gray-500 dark:text-gray-400">{t(certificates[current].issuerKey)} &middot; {certificates[current].date}</p>
+                        {certificates[current].descriptionKey && (
+                            <p className="mt-2 text-gray-700 dark:text-gray-300 text-center">{t(certificates[current].descriptionKey)}</p>
                         )}
                     </div>
                 </div>

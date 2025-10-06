@@ -1,10 +1,12 @@
+'use client'
+
 import Link from "next/link";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const workExperiences = [
   {
     title: "PT. Netgen Inovasi Digital - Web and Mobile Developer",
-    description:
-      "At Netgen Inovasi Digital, I worked as a Web and Mobile Developer, focusing on building and maintaining web and mobile applications for various clients. My responsibilities included developing user-friendly interfaces, ensuring cross-platform compatibility, and optimizing application performance. I collaborated closely with designers and backend developers to deliver seamless digital experiences that met client requirements.",
+    descriptionKey: "workExperiences.netgenDescription",
     tech: ["Codeigniter 4", "Bootstrap", "MySQL", "Vue.js", "Flutter"],
     project: [
       "Ecomel Sasirangan Ecommerce App",
@@ -18,8 +20,7 @@ const workExperiences = [
   },
   {
     title: "PT. Kalimantan Prima Persada - Mobile Developer (internship)",
-    description:
-      "During my internship at PT. Kalimantan Prima Persada, I contributed as a Mobile Developer, where I assisted in the development of mobile applications aimed at improving business operations. I gained hands-on experience with React Native, working on features that enhanced user engagement and functionality. This role allowed me to apply my technical skills in a real-world setting while learning about the mobile development lifecycle and best practices.",
+    descriptionKey: "workExperiences.kppDescription",
     tech: ["React Native", ".Net Core", "SQL Server"],
     project: ["Poins Mobile App", "Water Bender Mobile App"],
     link: "https://www.kppmining.com/",
@@ -27,8 +28,7 @@ const workExperiences = [
   },
   {
     title: "PT. Inspirasi Mandiri Nusantara - Wordpress Developer (internship)",
-    description:
-      "During my internship at PT. Inspirasi Mandiri Nusantara, I worked as a Wordpress Developer, where I assisted in the development and maintenance of Wordpress-based websites. My responsibilities included customizing themes, developing plugins, and ensuring website performance and security. This role allowed me to enhance my skills in PHP, HTML, CSS, and JavaScript while working on real-world projects.",
+    descriptionKey: "workExperiences.inspirasimandiriDescription",
     project: ["Pintara Web App"],
     tech: ["Wordpress", "PHP", "JavaScript"],
     link: "https://pintara.id/",
@@ -36,8 +36,7 @@ const workExperiences = [
   },
   {
     title: "PT. Bias Edukasi Indonesia - Web Developer (internship)",
-    description:
-      "During my internship at PT. Bias Edukasi Indonesia, I worked as a Web Developer, where I assisted in the development and maintenance of web applications. My responsibilities included implementing new features, fixing bugs, and optimizing performance. This role allowed me to enhance my skills in web development technologies while working on real-world projects.",
+    descriptionKey: "workExperiences.biasDescription",
     project: ["Bias Education Web App"],
     tech: ["Laravel", "Bootstrap", "MySQL"],
     link: "https://bias-education.com/",
@@ -46,6 +45,7 @@ const workExperiences = [
 ];
 
 export function WorkExperiences() {
+  const { t } = useLanguage()
   return (
     <div className="space-y-4">
       {workExperiences.map((item) => (
@@ -63,11 +63,11 @@ export function WorkExperiences() {
                 {item.title}
               </p>
               <p className="text-sm text-neutral-600 dark:text-neutral-400 mt-1">
-                {item.description}
+                {t(item.descriptionKey)}
               </p>
               <div className="flex flex-wrap gap-2 mt-2">
                 <p className="text-xs text-neutral-500 dark:text-neutral-400">
-                  Projects:
+                  {t('workExperiences.projects')}
                 </p>
                 {item.project &&
                   item.project.map((proj) => (
@@ -81,7 +81,7 @@ export function WorkExperiences() {
               </div>
               <div className="flex flex-wrap gap-2 mt-2">
                 <p className="text-xs text-neutral-500 dark:text-neutral-400">
-                  Tech stack:
+                  {t('workExperiences.techStack')}
                 </p>
                 {item.tech.map((tech) => (
                   <div

@@ -7,6 +7,7 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
+import { LanguageProvider } from './contexts/LanguageContext'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -53,13 +54,15 @@ export default function RootLayout({
       )}
     >
       <body className="antialiased">
-        <Navbar />
-        <main className="min-h-screen">
-          <div className="max-w-7xl mx-auto px-4 py-8">
-            {children}
-          </div>
-        </main>
-        <Footer />
+        <LanguageProvider>
+          <Navbar />
+          <main className="min-h-screen">
+            <div className="max-w-7xl mx-auto px-4 py-8">
+              {children}
+            </div>
+          </main>
+          <Footer />
+        </LanguageProvider>
         <Analytics />
         <SpeedInsights />
       </body>

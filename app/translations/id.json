@@ -1,0 +1,101 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "projects": "Proyek",
+    "contact": "Kontak",
+    "logo": "Portfolio Nazar"
+  },
+  "home": {
+    "greeting": "Halo, Saya Muhammad Nazar Gunawan 👋",
+    "title": "Pengembang Web dan Aplikasi",
+    "subtitle": "Mobile",
+    "description": "Saya menciptakan pengalaman digital yang menarik untuk web dan mobile yang menyenangkan pengguna dan memberikan hasil.",
+    "getInTouch": "Hubungi Saya",
+    "browseProjects": "Lihat Proyek",
+    "featuredProjects": "🚀 Proyek Unggulan",
+    "workExperiences": "👨‍💻 Pengalaman Kerja"
+  },
+  "about": {
+    "title": "Tentang",
+    "titleHighlight": "Saya",
+    "description": "Pengembang web dan mobile yang berdedikasi untuk membangun pengalaman yang mulus dan menarik di berbagai platform. Saya senang membuat antarmuka yang intuitif dan aplikasi yang berkinerja tinggi untuk pengguna web dan mobile.",
+    "myStory": "Cerita Saya",
+    "storyParagraph1": "Saya adalah lulusan Ilmu Komputer dari Universitas Lambung Mangkurat dengan passion yang kuat dalam pengembangan aplikasi web dan mobile. Selama studi dan proyek-proyek nyata, saya mendapat pengalaman langsung dalam membangun aplikasi menggunakan Flutter, React, dan Next.js, serta pengembangan backend dengan PHP dan CodeIgniter.",
+    "storyParagraph2": "Saya senang memecahkan masalah melalui pemikiran logis, berkolaborasi dalam tim, dan memberikan solusi yang dapat diandalkan. Saya juga telah berkontribusi pada proyek-proyek di PT. Netgen Inovasi Digital, dengan fokus pada pengembangan aplikasi web dan mobile untuk usaha kecil hingga menengah.",
+    "storyParagraph3": "Saya terbuka untuk peluang dalam pengembangan perangkat lunak dan selalu antusias untuk belajar, berkembang, dan menciptakan solusi teknologi yang berdampak.",
+    "technicalSkills": "Keahlian Teknis",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "toolsOthers": "Tools & Lainnya",
+    "certificatesTitle": "Sertifikat & Pencapaian"
+  },
+  "projects": {
+    "title": "Proyek",
+    "titleHighlight": "Saya",
+    "description": "Berikut adalah beberapa proyek yang telah saya kerjakan. Setiap proyek mewakili tantangan unik dan pengalaman belajar yang telah membantu saya tumbuh sebagai developer.",
+    "featuredProjects": "Proyek Unggulan",
+    "otherProjects": "Proyek Lainnya",
+    "note": "Catatan: Screenshot fitur detail tidak ditampilkan karena alasan kerahasiaan dan informasi sensitif.",
+    "liveDemo": "Demo Live ↗",
+    "github": "GitHub ↗",
+    "wantToCollaborate": "Ingin berkolaborasi?",
+    "collaborateDescription": "Saya selalu tertarik bekerja pada proyek-proyek yang menarik. Apakah Anda memiliki ide untuk aplikasi baru atau membutuhkan bantuan dengan proyek yang sudah ada, mari diskusikan bagaimana kita bisa bekerja sama.",
+    "getInTouch": "Hubungi Saya →"
+  },
+  "contact": {
+    "title": "Hubungi",
+    "titleHighlight": "Saya",
+    "description": "Saya selalu tertarik mendengar tentang peluang baru, terutama yang melibatkan kerja remote dengan tim yang inovatif.",
+    "letsWorkTogether": "Mari bekerja sama",
+    "workTogetherDescription": "Apakah Anda memiliki proyek dalam pikiran atau hanya ingin terhubung, jangan ragu untuk menghubungi. Saya biasanya merespons dalam 24 jam.",
+    "email": "Email",
+    "location": "Lokasi",
+    "locationValue": "Indonesia (Tersedia di seluruh dunia)",
+    "connectWithMe": "Terhubung dengan saya",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "readyToStart": "Siap memulai proyek Anda?",
+    "readyToStartDescription": "Saya saat ini tersedia untuk proyek baru dan ingin mendengar tentang apa yang Anda kerjakan. Mari diskusikan bagaimana kita bisa mewujudkan ide Anda.",
+    "sendEmail": "📧 Kirim Email",
+    "learnMoreAboutMe": "Pelajari Lebih Lanjut Tentang Saya"
+  },
+  "workExperiences": {
+    "projects": "Proyek:",
+    "techStack": "Tech stack:",
+    "netgenDescription": "Di Netgen Inovasi Digital, saya bekerja sebagai Web dan Mobile Developer, fokus pada membangun dan memelihara aplikasi web dan mobile untuk berbagai klien. Tanggung jawab saya meliputi mengembangkan antarmuka yang user-friendly, memastikan kompatibilitas lintas platform, dan mengoptimalkan performa aplikasi. Saya berkolaborasi erat dengan desainer dan backend developer untuk memberikan pengalaman digital yang seamless sesuai kebutuhan klien.",
+    "kppDescription": "Selama magang di PT. Kalimantan Prima Persada, saya berkontribusi sebagai Mobile Developer, di mana saya membantu dalam pengembangan aplikasi mobile yang bertujuan meningkatkan operasi bisnis. Saya mendapat pengalaman langsung dengan React Native, bekerja pada fitur-fitur yang meningkatkan engagement dan fungsionalitas pengguna. Peran ini memungkinkan saya menerapkan keterampilan teknis dalam lingkungan nyata sambil mempelajari siklus pengembangan mobile dan best practices.",
+    "inspirasimandiriDescription": "Selama magang di PT. Inspirasi Mandiri Nusantara, saya bekerja sebagai WordPress Developer, di mana saya bertanggung jawab untuk membuat dan menyesuaikan website menggunakan WordPress. Saya mengembangkan tema dan plugin kustom, mengoptimalkan performa website, dan memastikan desain responsif di berbagai perangkat. Pengalaman ini meningkatkan keterampilan saya dalam PHP, HTML, CSS, dan JavaScript sambil bekerja dalam lingkungan tim yang kolaboratif.",
+    "biasDescription": "Selama magang di PT. Bias Edukasi Indonesia, saya bekerja sebagai Web Developer, di mana saya membantu dalam pengembangan dan pemeliharaan aplikasi web. Tanggung jawab saya meliputi mengimplementasikan fitur baru, memperbaiki bug, dan mengoptimalkan performa. Peran ini memungkinkan saya meningkatkan keterampilan dalam teknologi pengembangan web sambil bekerja pada proyek-proyek nyata."
+  },
+  "certificates": {
+    "title": "Sertifikat sebagai Developer",
+    "juniorMobileDev": "Sertifikat Junior Mobile Developer",
+    "juniorMobileDevDesc": "Disertifikasi sebagai Junior Mobile Developer oleh BNSP, menunjukkan keahlian dalam pengembangan aplikasi mobile menggunakan React Native dan Flutter.",
+    "juniorWebDev": "Sertifikat Junior Web Developer",
+    "juniorWebDevDesc": "Disertifikasi sebagai Junior Web Developer oleh BNSP, menunjukkan keahlian dalam pengembangan web menggunakan HTML, CSS, dan JavaScript.",
+    "issuer": "Badan Nasional Sertifikasi Profesi (BNSP)"
+  },
+  "footer": {
+    "copyright": "Tersedia untuk kerja remote di seluruh dunia."
+  },
+  "featuredProjects": {
+    "viewAllProjects": "Lihat semua proyek →",
+    "clinicManagement": {
+      "title": "Aplikasi Sistem Manajemen Klinik dan Apotek",
+      "description": "Aplikasi Sistem Manajemen adalah aplikasi web manajemen klinik dan apotek berbasis CodeIgniter 4 yang dirancang untuk memperlancar operasi klinik dan apotek. Fitur utama meliputi manajemen pasien, penjadwalan appointment, rekam medis, manajemen resep, kontrol inventori, penagihan, dan pelaporan. Sistem ini juga mendukung peran pengguna (admin, staf, apoteker) dan terintegrasi dengan database MySQL untuk penyimpanan data yang aman."
+    },
+    "medikidz": {
+      "title": "Aplikasi Profil Medikidz",
+      "description": "Aplikasi Profil Medikidz adalah aplikasi website profil klinik berbasis CodeIgniter 4 yang digunakan untuk menampilkan informasi, layanan, berita, dan profil klinik Medikidz Banjarbaru. Aplikasi ini mendukung manajemen konten, galeri, tim medis, pengumuman, dan integrasi database MariaDB/MySQL."
+    },
+    "ecomelEcommerce": {
+      "title": "Aplikasi E-commerce Ecomel Sasirangan",
+      "description": "Aplikasi E-commerce Ecomel adalah aplikasi web e-commerce berbasis CodeIgniter 4 yang dikembangkan untuk penjualan online produk Sasirangan. Proyek ini menampilkan manajemen produk, kategori, stok, diskon, dan foto produk, manajemen pesanan, pembayaran, dan pengiriman. Aplikasi ini juga memiliki sistem autentikasi dan otorisasi pengguna (admin, pengguna, partner, dll.), dashboard admin dan pengguna, serta manajemen konten (postingan, halaman, pengumuman, tampilan landing)."
+    },
+    "ecomelInventory": {
+      "title": "Aplikasi Inventori Ecomel Sasirangan",
+      "description": "Aplikasi Inventori Ecomel adalah aplikasi web manajemen inventori berbasis CodeIgniter 4 yang dikembangkan untuk penjualan online produk Sasirangan. Proyek ini mencakup beberapa fitur utama, seperti manajemen alat, bahan, pemasok, pembelian, pengeluaran, dan pengguna. Aplikasi ini juga mendukung autentikasi dan otorisasi pengguna, bersama dengan migrasi dan seeding database untuk mempermudah setup. Sistem dibangun dengan struktur modular dan scalable, membuatnya lebih mudah untuk dipelihara dan dikembangkan di masa depan."
+    }
+  }
+}

@@ -1,19 +1,18 @@
-export const metadata = {
-  title: 'Contact',
-  description: 'Get in touch for collaboration opportunities and project discussions.',
-}
+'use client'
+
+import { useLanguage } from '../contexts/LanguageContext'
 
 export default function ContactPage() {
+  const { t } = useLanguage()
   return (
     <div className="max-w-4xl mx-auto">
       {/* Hero Section */}
       <section className="text-center py-12">
         <h1 className="text-4xl font-bold tracking-tight mb-4">
-          Get In <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">Touch</span>
+          {t('contact.title')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">{t('contact.titleHighlight')}</span>
         </h1>
         <p className="text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
-          I'm always interested in hearing about new opportunities, especially 
-          those involving remote work with innovative teams.
+          {t('contact.description')}
         </p>
       </section>
       
@@ -21,10 +20,9 @@ export default function ContactPage() {
         {/* Contact Info */}
         <div className="space-y-8">
           <div>
-            <h2 className="text-2xl font-bold tracking-tight mb-6">Let's work together</h2>
+            <h2 className="text-2xl font-bold tracking-tight mb-6">{t('contact.letsWorkTogether')}</h2>
             <p className="text-neutral-600 dark:text-neutral-400 mb-6">
-              Whether you have a project in mind or just want to connect, feel free to reach out.
-              I typically respond within 24 hours.
+              {t('contact.workTogetherDescription')}
             </p>
           </div>
           
@@ -34,7 +32,7 @@ export default function ContactPage() {
                 <span className="text-white text-xl">📧</span>
               </div>
               <div>
-                <p className="font-medium text-lg">Email</p>
+                <p className="font-medium text-lg">{t('contact.email')}</p>
                 <a 
                   href="mailto:hello@lucadcz.dev" 
                   className="text-neutral-600 dark:text-neutral-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
@@ -49,9 +47,9 @@ export default function ContactPage() {
                 <span className="text-white text-xl">🌍</span>
               </div>
               <div>
-                <p className="font-medium text-lg">Location</p>
+                <p className="font-medium text-lg">{t('contact.location')}</p>
                 <p className="text-neutral-600 dark:text-neutral-400">
-                  Indonesia (Available worldwide)
+                  {t('contact.locationValue')}
                 </p>
               </div>
             </div>
@@ -59,7 +57,7 @@ export default function ContactPage() {
 
           {/* Social Links */}
           <div>
-            <h3 className="font-medium text-lg mb-4">Connect with me</h3>
+            <h3 className="font-medium text-lg mb-4">{t('contact.connectWithMe')}</h3>
             <div className="grid grid-cols-2 gap-3">
               <a 
                 href="https://github.com/lucadcz" 
@@ -67,7 +65,7 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center space-x-2 px-4 py-3 bg-neutral-100 dark:bg-neutral-800 rounded-xl hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors group"
               >
-                <span>GitHub</span>
+                <span>{t('contact.github')}</span>
                 <span className="group-hover:translate-x-1 transition-transform">↗</span>
               </a>
               <a 
@@ -76,7 +74,7 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center space-x-2 px-4 py-3 bg-blue-100 dark:bg-blue-900 rounded-xl hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors group"
               >
-                <span>LinkedIn</span>
+                <span>{t('contact.linkedin')}</span>
                 <span className="group-hover:translate-x-1 transition-transform">↗</span>
               </a>
             </div>
@@ -87,24 +85,23 @@ export default function ContactPage() {
       {/* CTA Section */}
       <section className="bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-950 dark:to-blue-950 rounded-2xl p-8 text-center">
         <h2 className="text-2xl font-bold tracking-tight mb-4">
-          Ready to start your project?
+          {t('contact.readyToStart')}
         </h2>
         <p className="text-neutral-600 dark:text-neutral-400 mb-6 max-w-2xl mx-auto">
-          I'm currently available for new projects and would love to hear about 
-          what you're working on. Let's discuss how we can bring your ideas to life.
+          {t('contact.readyToStartDescription')}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a 
             href="mailto:nazargunawan.m@gmail.com"
             className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-purple-600 text-white rounded-xl hover:bg-purple-700 transition-colors font-medium"
           >
-            📧 Send Email
+            {t('contact.sendEmail')}
           </a>
           <a 
             href="/about"
             className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-neutral-300 dark:border-neutral-700 rounded-xl hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors font-medium"
           >
-            Learn More About Me
+            {t('contact.learnMoreAboutMe')}
           </a>
         </div>
       </section>

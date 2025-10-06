@@ -1,9 +1,7 @@
-import ImageSlider from "app/components/image-slider";
+'use client'
 
-export const metadata = {
-  title: "Projects",
-  description: "Explore my latest projects and technical achievements.",
-};
+import ImageSlider from "app/components/image-slider";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const projects = [
   {
@@ -174,6 +172,7 @@ const wordpressProjects = [
 ];
 
 export default function ProjectsPage() {
+  const { t } = useLanguage()
   const featuredProjects = projects.filter((p) => p.featured);
   const otherProjects = projects.filter((p) => !p.featured);
 
@@ -182,22 +181,20 @@ export default function ProjectsPage() {
       {/* Hero Section */}
       <section className="text-center py-12">
         <h1 className="text-4xl font-bold tracking-tight mb-4">
-          My{" "}
+          {t('projects.title')}{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">
-            Projects
+            {t('projects.titleHighlight')}
           </span>
         </h1>
         <p className="text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
-          Here are some of the projects I've worked on. Each one represents a
-          unique challenge and learning experience that has helped me grow as a
-          developer.
+          {t('projects.description')}
         </p>
       </section>
 
       {/* Featured Projects */}
       <section className="mb-16">
         <h2 className="text-2xl font-bold tracking-tight mb-8">
-          Featured Projects
+          {t('projects.featuredProjects')}
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {featuredProjects.map((project, index) => (
@@ -243,15 +240,13 @@ export default function ProjectsPage() {
                     href={project.liveUrl}
                     className="flex items-center gap-2 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors font-medium"
                   >
-                    <span>Live Demo</span>
-                    <span>↗</span>
+                    <span>{t('projects.liveDemo')}</span>
                   </a>
                   <a
                     href={project.githubUrl}
                     className="flex items-center gap-2 px-4 py-2 border border-neutral-300 dark:border-neutral-700 text-neutral-900 dark:text-neutral-100 rounded-lg hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors font-medium"
                   >
-                    <span>GitHub</span>
-                    <span>↗</span>
+                    <span>{t('projects.github')}</span>
                   </a>
                 </div>
               </div>
@@ -263,7 +258,7 @@ export default function ProjectsPage() {
       {/* Other Projects */}
       <section className="mb-16">
         <h2 className="text-2xl font-bold tracking-tight mb-8">
-          Other Projects
+          {t('projects.otherProjects')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {otherProjects.map((project, index) => (
@@ -444,18 +439,16 @@ export default function ProjectsPage() {
       {/* CTA Section */}
       <section className="bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-950 dark:to-blue-950 rounded-2xl p-8 text-center">
         <h2 className="text-2xl font-bold tracking-tight mb-4">
-          Want to collaborate?
+          {t('projects.wantToCollaborate')}
         </h2>
         <p className="text-neutral-600 dark:text-neutral-400 mb-6 max-w-2xl mx-auto">
-          I'm always interested in working on exciting projects. Whether you
-          have an idea for a new application or need help with an existing
-          project, let's discuss how we can work together.
+          {t('projects.collaborateDescription')}
         </p>
         <a
           href="/contact"
           className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors font-medium"
         >
-          Get in Touch →
+          {t('projects.getInTouch')}
         </a>
       </section>
     </div>

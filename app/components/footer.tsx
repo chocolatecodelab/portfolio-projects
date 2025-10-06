@@ -1,3 +1,7 @@
+'use client'
+
+import { useLanguage } from '../contexts/LanguageContext'
+
 function ArrowIcon() {
   return (
     <svg
@@ -16,6 +20,7 @@ function ArrowIcon() {
 }
 
 export default function Footer() {
+  const { t } = useLanguage()
   return (
     <footer className="mb-16 flex flex-col items-center text-center">
       <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
@@ -63,7 +68,7 @@ export default function Footer() {
         </li>
       </ul>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} Muhammad Nazar Gunawan. Available for remote work worldwide.
+        © {new Date().getFullYear()} Muhammad Nazar Gunawan. {t('footer.copyright')}
       </p>
     </footer>
   )

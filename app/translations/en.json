@@ -1,0 +1,101 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "logo": "Nazar's Portfolio"
+  },
+  "home": {
+    "greeting": "Hey, I'm Muhammad Nazar Gunawan 👋",
+    "title": "Web and Mobile App",
+    "subtitle": "Developer",
+    "description": "I craft engaging digital experiences for web and mobile that delight users and drive results.",
+    "getInTouch": "Get In Touch",
+    "browseProjects": "Browse Projects",
+    "featuredProjects": "🚀 Featured Projects",
+    "workExperiences": "👨‍💻 Work Experiences"
+  },
+  "about": {
+    "title": "About",
+    "titleHighlight": "Me",
+    "description": "Web and mobile developer dedicated to building seamless, engaging experiences across platforms. I enjoy crafting intuitive interfaces and performant applications for both web and mobile users.",
+    "myStory": "My Story",
+    "storyParagraph1": "I am a Computer Science graduate from Universitas Lambung Mangkurat with a strong passion for web and mobile application development. During my studies and real-world projects, I gained hands-on experience in building applications using Flutter, React, and Next.js, as well as backend development with PHP and CodeIgniter.",
+    "storyParagraph2": "I enjoy solving problems through logical thinking, collaborating in teams, and delivering reliable solutions. I have also contributed to projects under PT. Netgen Inovasi Digital, focusing on web and mobile app development for small-to-medium businesses.",
+    "storyParagraph3": "I am open to opportunities in software development and always eager to learn, grow, and create impactful technology solutions.",
+    "technicalSkills": "Technical Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "toolsOthers": "Tools & Others",
+    "certificatesTitle": "Certificates & Achievements"
+  },
+  "projects": {
+    "title": "My",
+    "titleHighlight": "Projects",
+    "description": "Here are some of the projects I've worked on. Each one represents a unique challenge and learning experience that has helped me grow as a developer.",
+    "featuredProjects": "Featured Projects",
+    "otherProjects": "Other Projects",
+    "note": "Note: Detailed feature screenshots are not displayed due to confidentiality and sensitive information.",
+    "liveDemo": "Live Demo ↗",
+    "github": "GitHub ↗",
+    "wantToCollaborate": "Want to collaborate?",
+    "collaborateDescription": "I'm always interested in working on exciting projects. Whether you have an idea for a new application or need help with an existing project, let's discuss how we can work together.",
+    "getInTouch": "Get in Touch →"
+  },
+  "contact": {
+    "title": "Get In",
+    "titleHighlight": "Touch",
+    "description": "I'm always interested in hearing about new opportunities, especially those involving remote work with innovative teams.",
+    "letsWorkTogether": "Let's work together",
+    "workTogetherDescription": "Whether you have a project in mind or just want to connect, feel free to reach out. I typically respond within 24 hours.",
+    "email": "Email",
+    "location": "Location",
+    "locationValue": "Indonesia (Available worldwide)",
+    "connectWithMe": "Connect with me",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "readyToStart": "Ready to start your project?",
+    "readyToStartDescription": "I'm currently available for new projects and would love to hear about what you're working on. Let's discuss how we can bring your ideas to life.",
+    "sendEmail": "📧 Send Email",
+    "learnMoreAboutMe": "Learn More About Me"
+  },
+  "workExperiences": {
+    "projects": "Projects:",
+    "techStack": "Tech stack:",
+    "netgenDescription": "At Netgen Inovasi Digital, I worked as a Web and Mobile Developer, focusing on building and maintaining web and mobile applications for various clients. My responsibilities included developing user-friendly interfaces, ensuring cross-platform compatibility, and optimizing application performance. I collaborated closely with designers and backend developers to deliver seamless digital experiences that met client requirements.",
+    "kppDescription": "During my internship at PT. Kalimantan Prima Persada, I contributed as a Mobile Developer, where I assisted in the development of mobile applications aimed at improving business operations. I gained hands-on experience with React Native, working on features that enhanced user engagement and functionality. This role allowed me to apply my technical skills in a real-world setting while learning about the mobile development lifecycle and best practices.",
+    "inspirasimandiriDescription": "During my internship at PT. Inspirasi Mandiri Nusantara, I worked as a WordPress Developer, where I was responsible for creating and customizing websites using WordPress. I developed custom themes and plugins, optimized website performance, and ensured responsive design across various devices. This experience enhanced my skills in PHP, HTML, CSS, and JavaScript while working in a collaborative team environment.",
+    "biasDescription": "During my internship at PT. Bias Edukasi Indonesia, I worked as a Web Developer, where I assisted in the development and maintenance of web applications. My responsibilities included implementing new features, fixing bugs, and optimizing performance. This role allowed me to enhance my skills in web development technologies while working on real-world projects."
+  },
+  "certificates": {
+    "title": "Certificates as a Developer",
+    "juniorMobileDev": "Junior Mobile Developer Certification",
+    "juniorMobileDevDesc": "Certified as a Junior Mobile Developer by BNSP, demonstrating proficiency in mobile application development using React Native and Flutter.",
+    "juniorWebDev": "Junior Web Developer Certification",
+    "juniorWebDevDesc": "Certified as a Junior Web Developer by BNSP, demonstrating proficiency in web development using HTML, CSS, and JavaScript.",
+    "issuer": "Badan Nasional Sertifikasi Profesi (BNSP)"
+  },
+  "footer": {
+    "copyright": "Available for remote work worldwide."
+  },
+  "featuredProjects": {
+    "viewAllProjects": "View all projects →",
+    "clinicManagement": {
+      "title": "Clinic and Pharmacy Management System App",
+      "description": "Management System App is a CodeIgniter 4-based clinic and pharmacy management web application designed to streamline operations for clinics and pharmacies. Key features include patient management, appointment scheduling, medical records, prescription management, inventory control, billing, and reporting. The system also supports user roles (admin, staff, pharmacist) and integrates with a MySQL database for secure data storage."
+    },
+    "medikidz": {
+      "title": "Medikidz Profile App",
+      "description": "Medikidz Profile App is a CodeIgniter 4-based clinic profile website application used to display information, services, news, and the Medikidz Banjarbaru clinic profile. The app supports content management, a gallery, a medical team, announcements, and MariaDB/MySQL database integration."
+    },
+    "ecomelEcommerce": {
+      "title": "Ecomel Sasirangan Ecommerce App",
+      "description": "Ecomel Ecommerce App is a CodeIgniter 4-based e-commerce web application developed for the online sale of Sasirangan products. This project features product management, categories, stock, discounts, and product photos, order management, payment, and shipping. It also features a user authentication and authorization system (admins, users, partners, etc.), an admin and user dashboard, and content management (posts, pages, announcements, landing views)."
+    },
+    "ecomelInventory": {
+      "title": "Ecomel Sasirangan Inventory App",
+      "description": "Ecomel Inventory App is a CodeIgniter 4-based inventory management web application developed for the online sale of Sasirangan products. This project includes several key features, such as the management of tools, materials, suppliers, purchases, expenses, and users. It also supports user authentication and authorization, along with database migration and seeding to simplify setup. The system is built with a modular and scalable structure, making it easier to maintain and extend in the future."
+    }
+  }
+}
